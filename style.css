@@ -1,170 +1,253 @@
-        body {background:rgb(0, 0, 0)}
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
 
-        h1 {
-            font-family: 'Press Start 2P';
-            font-size: 70px;
-            color: #ffffff;
-            -webkit-text-stroke: 3px black;
-            text-align: center;          
-            
-        }
+h1 {
+  font-family: "Press Start 2P";
+  font-size: 70px;
+  color: #ffffff;
+  -webkit-text-stroke: 3px black;
+  text-align: center;
+}
 
-        #avatar {
-            text-align: center;
-            margin-top: 100px;
-            margin-bottom: 100px;
-          
-        }
+#avatar {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
 
-        #apresentacao {
-            width: 100%;
-            height: auto;
-            background: url(./fundo7.gif);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            padding-top: 150px;
-            padding-bottom: 150px;
-            text-align: center;
-        }
+#apresentacao {
+  width: 100%;
+  min-height: 40rem;
+  background: url(./fundo7.gif);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
 
-        
-        .curriculum{
-            display: flex;
-            flex-direction: row;
-        }
+.curriculum {
+  display: flex;
+  flex-direction: row;
+  padding-top: 2rem;
+}
 
-        
-        .courses, .contact{            
-            background:#111111;
-            width: 50%; 
-            height: 30rem;
-            font-size: 1.1rem;
-            font-family:Arial, Helvetica, sans-serif;
-            text-align: left;
-            font-weight: bold;
-            line-height: 2.0;       
-            padding: 2rem;
-            color: #ffffff;
-                   
-        }
+.courses,
+.contact {
+  background: #111111;
+  width: 50%;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  font-weight: bold;
+  line-height: 2;
+  padding: 2rem;
+  color: #ffffff;
+}
 
-        .year{
-            color: yellow;
-            font-size: 15px;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bold;        
-            display: inline;
-        }
-        
-        .icons{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-                      
-        }
-        .portifolio {            
-            padding-top: 10%;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-           
-        }
-                     
-        
-        .footer{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #030303;
-            text-decoration: none;
-            font-size: 0.8rem;
-        }
+.year {
+  color: yellow;
+  font-size: 15px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: bold;
+  display: inline;
+}
 
-        * {
-            box-sizing: border-box;
-          }
-          
-          body {
-            background-color: #f1f1f1;
-            padding: 20px;
-            font-family: Arial;
-          }
-          
-          /* Center website */
-          .main {
-            max-width: 1000px;
-            margin: auto;
-          }
-          
-          h1 {
-            font-size: 50px;
-            word-break: break-all;
-          }
-          
-          .row {
-            margin: 8px -16px;
-          }
-          
-          /* Add padding BETWEEN each column (if you want) */
-          .row,
-          .row > .column {
-            padding: 8px;
-          }
-          
-          /* Create four equal columns that floats next to each other */
-          .column {
-            float: left;
-            width: 25%;
-          }
-          
-          /* Clear floats after rows */
-          .row:after {
-            content: "";
-            display: table;
-            clear: both;
-          }
-          
-          /* Content */
-          .content {
-            background-color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            padding: 4rem;
-            padding-right: 6rem;
-            padding-top: 2rem;
-            border-radius: .5em;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+.icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.portifolio {
+  padding-top: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-          }
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #030303;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
 
-          .card{
-            background-color: white;
-            padding: 1rem;
-            display: flex;
-            align-items: center; 
-            flex-direction: column;
-            min-height: 15rem;
-            border-radius: .5em;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-          }
+* {
+  box-sizing: border-box;
+}
 
-          .card-img{
-              max-width: 7rem;
-              
-          }
-          
-          /* Responsive layout - makes a two column-layout instead of four columns */
-          @media screen and (max-width: 900px) {
-            .column {
-              width: 50%;
-            }
-          }
-          
-          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-          @media screen and (max-width: 600px) {
-            .column {
-              width: 100%;
-            }
-          }
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Colums */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  width: 50%;
+  height: 30rem;
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.5em;
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 15rem;
+  border-radius: 0.5em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+  max-width: 7rem;
+}
+
+.modal-container {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+
+#portifolio-frame {
+  width: 100vw;
+  height: 100vh;
+}
+
+.modal-conteiner.mostra {
+  display: flex;
+}
+.modal {
+  background: white;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #111;
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translated3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translated3d(0, 0, 0);
+  }
+}
+.show-modal {
+  display: flex;
+  animation: modal 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  font-size: 1.2rem;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background: #988b7a;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3);
+}
+.portifolio {
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5em;
+  padding: 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.portifolio-item {
+  max-width: 30vw;
+  height: auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .column {
+    width: 50%;
+  }
+  .portifolio-item {
+    max-width: 30vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  .body {
+    display: flex;
+    justify-content: center;
+  }
+  .column {
+    width: 100%;
+  }
+  #apresentacao {
+    min-width: 100vw;
+  }
+  .curriculum {
+    flex-direction: column;
+    padding-top: 2rem;
+  }
+  .courses,
+  .contact {
+    width: 100%;
+  }
+  .content {
+    width: 100vw;
+  }
+  .portifolio {
+    flex-direction: column;
+    max-width: 90%;
+    padding: 0px;
+  }
+  .portifolio-item {
+    max-width: 95%;
+    padding: 0px;
+  }
+}
