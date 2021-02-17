@@ -1,0 +1,170 @@
+        body {background:rgb(0, 0, 0)}
+
+        h1 {
+            font-family: 'Press Start 2P';
+            font-size: 70px;
+            color: #ffffff;
+            -webkit-text-stroke: 3px black;
+            text-align: center;          
+            
+        }
+
+        #avatar {
+            text-align: center;
+            margin-top: 100px;
+            margin-bottom: 100px;
+          
+        }
+
+        #apresentacao {
+            width: 100%;
+            height: auto;
+            background: url(./fundo7.gif);
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            padding-top: 150px;
+            padding-bottom: 150px;
+            text-align: center;
+        }
+
+        
+        .curriculum{
+            display: flex;
+            flex-direction: row;
+        }
+
+        
+        .courses, .contact{            
+            background:#111111;
+            width: 50%; 
+            height: 30rem;
+            font-size: 1.1rem;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: left;
+            font-weight: bold;
+            line-height: 2.0;       
+            padding: 2rem;
+            color: #ffffff;
+                   
+        }
+
+        .year{
+            color: yellow;
+            font-size: 15px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;        
+            display: inline;
+        }
+        
+        .icons{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+                      
+        }
+        .portifolio {            
+            padding-top: 10%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+                     
+        
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #030303;
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        * {
+            box-sizing: border-box;
+          }
+          
+          body {
+            background-color: #f1f1f1;
+            padding: 20px;
+            font-family: Arial;
+          }
+          
+          /* Center website */
+          .main {
+            max-width: 1000px;
+            margin: auto;
+          }
+          
+          h1 {
+            font-size: 50px;
+            word-break: break-all;
+          }
+          
+          .row {
+            margin: 8px -16px;
+          }
+          
+          /* Add padding BETWEEN each column (if you want) */
+          .row,
+          .row > .column {
+            padding: 8px;
+          }
+          
+          /* Create four equal columns that floats next to each other */
+          .column {
+            float: left;
+            width: 25%;
+          }
+          
+          /* Clear floats after rows */
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+          }
+          
+          /* Content */
+          .content {
+            background-color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            padding: 4rem;
+            padding-right: 6rem;
+            padding-top: 2rem;
+            border-radius: .5em;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+          }
+
+          .card{
+            background-color: white;
+            padding: 1rem;
+            display: flex;
+            align-items: center; 
+            flex-direction: column;
+            min-height: 15rem;
+            border-radius: .5em;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+          }
+
+          .card-img{
+              max-width: 7rem;
+              
+          }
+          
+          /* Responsive layout - makes a two column-layout instead of four columns */
+          @media screen and (max-width: 900px) {
+            .column {
+              width: 50%;
+            }
+          }
+          
+          /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+          @media screen and (max-width: 600px) {
+            .column {
+              width: 100%;
+            }
+          }
